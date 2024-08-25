@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Político</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Quiz Político</h1>
+        <form id="quiz-form">
+            <!-- Perguntas -->
+            <div class="form-group">
+                <label for="q1">1. Qual é a sua opinião sobre o papel do Estado na economia?</label>
+                <select class="form-control" id="q1" required>
+                    <option value="1">O Estado deve controlar totalmente a economia e todas as empresas</option>
+                    <option value="2">O Estado deve ter um controle significativo sobre a economia e regular as
+                        principais empresas</option>
+                    <option value="3">O Estado deve ter um papel moderado, regulando algumas áreas e permitindo a
+                        liberdade em outras</option>
+                    <option value="4">O Estado deve intervir pouco e deixar a economia mais livre</option>
+                    <option value="5">O Estado não deve intervir na economia; o mercado deve se auto-regular</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="q2">2. Como você vê a privatização de empresas estatais?</label>
+                <select class="form-control" id="q2" required>
+                    <option value="1">Deve ser totalmente feita, todas as empresas devem ser privadas</option>
+                    <option value="2">Deve ser feita para algumas empresas, mas com certas condições</option>
+                    <option value="3">Deve ser feita com equilíbrio, dependendo do setor e das necessidades</option>
+                    <option value="4">Deve ser limitada, com a maioria das empresas ainda estatais</option>
+                    <option value="5">Não deve ser feita, todas as empresas devem permanecer estatais</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="q3">3. Qual é a sua posição sobre a propriedade privada?</label>
+                <select class="form-control" id="q3" required>
+                    <option value="1">Deve ser totalmente controlada pelo Estado</option>
+                    <option value="2">Deve ter algumas restrições e controle estatal</option>
+                    <option value="3">Deve ter um equilíbrio entre controle estatal e liberdade individual</option>
+                    <option value="4">Deve ter pouca regulamentação do Estado</option>
+                    <option value="5">Deve ser completamente livre de qualquer controle estatal</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="q4">4. Qual a sua opinião sobre os direitos dos LGBTQI+?</label>
+                <select class="form-control" id="q4" required>
+                    <option value="1">Os direitos dos LGBTQI+ devem ser totalmente garantidos, com leis específicas e
+                        apoio do governo</option>
+                    <option value="2">Os direitos dos LGBTQI+ devem ser garantidos, mas com algumas limitações e
+                        regulamentações</option>
+                    <option value="3">Os direitos dos LGBTQI+ devem ser garantidos de forma equilibrada, sem leis
+                        especiais</option>
+                    <option value="4">Os direitos dos LGBTQI+ devem ser limitados, com foco apenas em algumas questões
+                        básicas</option>
+                    <option value="5">Não deve haver garantias específicas para os direitos dos LGBTQI+; todos devem ter
+                        os mesmos direitos sem distinção</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="q5">5. Qual a sua opinião sobre a intervenção do Estado nas questões ambientais?</label>
+                <select class="form-control" id="q5" required>
+                    <option value="1">O Estado deve intervir fortemente e tomar medidas rigorosas para proteger o meio ambiente</option>
+                    <option value="2">O Estado deve intervir de forma significativa, com regulamentações e incentivos para proteção ambiental</option>
+                    <option value="3">O Estado deve intervir de maneira equilibrada, promovendo a proteção ambiental sem sobrecarregar as empresas</option>
+                    <option value="4">O Estado deve intervir minimamente, com pouca regulamentação e mais foco em soluções do mercado</option>
+                    <option value="5">O Estado não deve intervir; a proteção ambiental deve ser deixada para as iniciativas privadas e ao mercado</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="q6">6. Qual a sua opinião sobre a legalização das drogas?</label>
+                    <select class="form-control" id="q6" required>
+                        <option value="1">Todas as drogas devem ser legalizadas e reguladas pelo Estado</option>
+                        <option value="2">Algumas drogas devem ser legalizadas e reguladas, mas outras devem continuar proibidas</option>
+                        <option value="3">A legalização deve ser feita de forma equilibrada, considerando aspectos de saúde e segurança</option>
+                        <option value="4">Drogas devem permanecer majoritariamente proibidas, com algumas exceções para usos medicinais</option>
+                        <option value="5">Todas as drogas devem continuar proibidas, com leis rígidas para seu controle</option>
+                    </select>
+                </div>
+                
+            </div>
+
+            <div class="form-group">
+                <label for="q7">7. O que você pensa sobre a redução da maioridade penal?</label>
+                <select class="form-control" id="q7" required>
+                    <option value="1">Para menores de 9 anos</option>
+                    <option value="2">Para menores de 14 anos</option>
+                    <option value="3">Para menores de 16 anos</option>
+                    <option value="4">Para menores de 18 anos</option>
+                    <option value="5">Manter maioridade penal atual</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="q8">8. Qual é a sua visão sobre o financiamento público de campanhas políticas?</label>
+                    <select class="form-control" id="q8" required>
+                        <option value="1">Todo o financiamento de campanhas deve ser feito exclusivamente com recursos públicos</option>
+                        <option value="2">O financiamento deve ser majoritariamente público, com algumas contribuições privadas permitidas</option>
+                        <option value="3">O financiamento deve ser uma mistura equilibrada de recursos públicos e privados</option>
+                        <option value="4">O financiamento deve ser principalmente privado, com alguma supervisão pública</option>
+                        <option value="5">Todo o financiamento de campanhas deve ser privado, sem intervenção pública</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="q9">9. Qual a sua opinião sobre o apoio do governo às indústrias locais?</label>
+                <select class="form-control" id="q9" required>
+                    <option value="1">O governo deve fornecer apoio total, como subsídios e incentivos fiscais, para todas as indústrias locais</option>
+                    <option value="2">O governo deve oferecer apoio significativo, com subsídios e incentivos para setores estratégicos</option>
+                    <option value="3">O governo deve fornecer um apoio moderado, ajudando algumas indústrias locais quando necessário</option>
+                    <option value="4">O governo deve oferecer pouco apoio, focando apenas em situações excepcionais</option>
+                    <option value="5">O governo não deve oferecer apoio; as indústrias locais devem se sustentar sozinhas</option>
+                </select>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="q10">10. O que você pensa sobre a intervenção do governo na cultura?</label>
+                <select class="form-control" id="q10" required>
+                    <option value="1">O governo deve investir e apoiar amplamente todas as formas de cultura e artes</option>
+                    <option value="2">O governo deve investir e apoiar áreas culturais específicas, como patrimônio e artes tradicionais</option>
+                    <option value="3">O governo deve oferecer algum apoio para a cultura, mas sem exageros e priorizando a eficiência</option>
+                    <option value="4">O governo deve oferecer pouco apoio, com foco apenas em projetos culturais de grande relevância</option>
+                    <option value="5">O governo não deve se envolver com a cultura; ela deve ser promovida e sustentada por iniciativas privadas</option>
+                </select>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="q11">11. O que você pensa sobre a assistência social para pessoas em situação de vulnerabilidade?</label>
+                <select class="form-control" id="q11" required>
+                    <option value="1">O governo deve fornecer assistência completa e contínua para todas as pessoas em situação de vulnerabilidade</option>
+                    <option value="2">O governo deve oferecer assistência significativa, com programas amplos para apoiar pessoas em situação de vulnerabilidade</option>
+                    <option value="3">O governo deve fornecer assistência básica, ajudando com programas essenciais e de forma eficiente</option>
+                    <option value="4">O governo deve oferecer assistência mínima, focando apenas em situações emergenciais e urgentes</option>
+                    <option value="5">O governo não deve fornecer assistência social; isso deve ser responsabilidade de ONGs e iniciativas privadas</option>
+                </select>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="q12">12. Qual a sua opinião sobre a importância da segurança pública?</label>
+                <select class="form-control" id="q12" required>
+                    <option value="1">A segurança pública deve ser a prioridade máxima, com recursos significativos para combater o crime e proteger a população</option>
+                    <option value="2">A segurança pública é muito importante, e o governo deve investir bastante para garantir a ordem e a proteção</option>
+                    <option value="3">A segurança pública é importante, mas o investimento deve ser equilibrado com outras necessidades sociais</option>
+                    <option value="4">A segurança pública deve receber algum investimento, mas não deve ser a principal prioridade do governo</option>
+                    <option value="5">A segurança pública não deve receber grandes investimentos; questões como educação e saúde devem ser priorizadas</option>
+                </select>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="q13">13. Como você vê o investimento em tecnologia e inovação?</label>
+                <select class="form-control" id="q13" required>
+                    <option value="1">O governo deve investir fortemente em tecnologia e inovação, priorizando isso acima de outras áreas</option>
+                    <option value="2">O governo deve fazer investimentos substanciais em tecnologia e inovação, mas também considerar outras necessidades</option>
+                    <option value="3">O governo deve investir moderadamente em tecnologia e inovação, equilibrando com outras áreas importantes</option>
+                    <option value="4">O governo deve investir apenas um pouco em tecnologia e inovação, priorizando outras áreas mais urgentes</option>
+                    <option value="5">O governo não deve investir muito em tecnologia e inovação; isso deve ser responsabilidade do setor privado</option>
+                </select>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="q14">14. Qual a sua opinião sobre taxar grandes fortunas?</label>
+                <select class="form-control" id="q14" required>
+                    <option value="1">O governo deve cobrar altos impostos de grandes fortunas para redistribuir a riqueza e financiar serviços públicos</option>
+                    <option value="2">O governo deve impor uma taxa considerável sobre grandes fortunas para ajudar a financiar serviços sociais e infraestrutura</option>
+                    <option value="3">O governo deve aplicar uma taxa moderada sobre grandes fortunas, equilibrando entre a arrecadação e o incentivo econômico</option>
+                    <option value="4">O governo deve cobrar uma taxa baixa sobre grandes fortunas, evitando sobrecarregar os ricos e mantendo um sistema tributário mais simples</option>
+                    <option value="5">O governo não deve taxar grandes fortunas; impostos devem ser menores e mais uniformes para todos</option>
+                </select>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="q15">15. Qual a sua opinião sobre o papel do governo em promover a igualdade racial?</label>
+                <select class="form-control" id="q15" required>
+                    <option value="1">O governo deve tomar medidas ativas e fornecer apoio direto para promover a igualdade racial em todas as áreas</option>
+                    <option value="2">O governo deve implementar políticas e programas significativos para promover a igualdade racial e reduzir desigualdades</option>
+                    <option value="3">O governo deve apoiar iniciativas para promover a igualdade racial, mas não deve intervir diretamente em todas as áreas</option>
+                    <option value="4">O governo deve oferecer algum apoio para promover a igualdade racial, mas a maior parte do trabalho deve ser feito por organizações privadas</option>
+                    <option value="5">O governo não deve se envolver na promoção da igualdade racial; isso deve ser responsabilidade de organizações privadas e da sociedade</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="q16">16. Qual a sua opinião sobre o papel do governo na educação básica?</label>
+                <select class="form-control" id="q16" required>
+                    <option value="1">O governo deve ser totalmente responsável por fornecer e garantir a educação básica para todos</option>
+                    <option value="2">O governo deve ser o principal responsável pela educação básica, garantindo acesso e qualidade para todos</option>
+                    <option value="3">O governo deve ter um papel moderado na educação básica, ajudando com a infraestrutura e recursos, mas permitindo certa participação privada</option>
+                    <option value="4">O governo deve ter um papel secundário na educação básica, com maior envolvimento de instituições privadas e da comunidade</option>
+                    <option value="5">O governo não deve ser responsável pela educação básica; isso deve ser gerido por instituições privadas e iniciativas da comunidade</option>
+                </select>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="q17">17. O que você acha do uso de dinheiro público para financiar instituições privadas, como escolas e hospitais?</label>
+                <select class="form-control" id="q17" required>
+                    <option value="1">O governo deve usar uma grande parte do dinheiro público para financiar instituições privadas, garantindo acesso a todos</option>
+                    <option value="2">O governo deve fornecer um financiamento considerável para instituições privadas, mas com controle e condições</option>
+                    <option value="3">O governo deve investir moderadamente em instituições privadas, ajudando a melhorar os serviços, mas sem prioridade</option>
+                    <option value="4">O governo deve investir pouco em instituições privadas, focando mais em serviços públicos diretos</option>
+                    <option value="5">O governo não deve financiar instituições privadas; o dinheiro público deve ser usado exclusivamente para serviços públicos</option>
+                </select>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="q18">18. Qual a sua opinião sobre o governo regular o mercado financeiro?</label>
+                <select class="form-control" id="q18" required>
+                    <option value="1">O governo deve regular fortemente o mercado financeiro para garantir estabilidade e proteger os consumidores</option>
+                    <option value="2">O governo deve ter uma regulação significativa do mercado financeiro, mas com algumas flexibilidades para o setor</option>
+                    <option value="3">O governo deve ter uma regulação moderada, equilibrando controle e liberdade para o mercado financeiro</option>
+                    <option value="4">O governo deve ter uma regulação leve, permitindo mais liberdade para o mercado financeiro com pouca intervenção</option>
+                    <option value="5">O governo não deve intervir no mercado financeiro; ele deve operar livremente sem regulação estatal</option>
+                </select>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="q19">19. O que você acha sobre o papel do governo na proteção e apoio às pequenas empresas?</label>
+                <select class="form-control" id="q19" required>
+                    <option value="1">O governo deve oferecer um grande suporte e proteção para pequenas empresas, incluindo subsídios e regulamentações favoráveis</option>
+                    <option value="2">O governo deve fornecer um suporte considerável para pequenas empresas, com políticas e ajuda financeira</option>
+                    <option value="3">O governo deve oferecer um suporte moderado para pequenas empresas, com algumas políticas e recursos disponíveis</option>
+                    <option value="4">O governo deve fornecer um suporte mínimo para pequenas empresas, focando mais em mercados maiores e na economia geral</option>
+                    <option value="5">O governo não deve intervir na proteção de pequenas empresas; o mercado deve determinar o sucesso ou fracasso</option>
+                </select>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="q20">20. Qual a sua opinião sobre a política de imigração do país?</label>
+                <select class="form-control" id="q20" required>
+                    <option value="1">O país deve ter políticas muito abertas e acolhedoras, facilitando a entrada e permanência de imigrantes</option>
+                    <option value="2">O país deve ter políticas abertas, com suporte e oportunidades para imigrantes, mas com algumas regulamentações</option>
+                    <option value="3">O país deve ter políticas equilibradas, oferecendo oportunidades para imigrantes, mas com controle e regulamentação</option>
+                    <option value="4">O país deve ter políticas restritivas, limitando a entrada e permanência de imigrantes, focando mais nos cidadãos</option>
+                    <option value="5">O país deve ter políticas muito rígidas e restritivas, dificultando a entrada e permanência de imigrantes</option>
+                </select>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="q21">21. Qual a sua opinião sobre o valor do salário mínimo?</label>
+                <select class="form-control" id="q21" required>
+                    <option value="1">O salário mínimo deve ser muito alto para garantir um padrão de vida confortável para todos</option>
+                    <option value="2">O salário mínimo deve ser alto para assegurar uma boa qualidade de vida e cobrir as necessidades básicas</option>
+                    <option value="3">O salário mínimo deve ser moderado, suficiente para cobrir as necessidades básicas, mas sem exageros</option>
+                    <option value="4">O salário mínimo deve ser baixo, permitindo mais flexibilidade para empresas e economia</option>
+                    <option value="5">O salário mínimo deve ser muito baixo, promovendo mais liberdade econômica e redução de custos para empresas</option>
+                </select>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="q22">22. Qual a sua opinião sobre o controle de preços de produtos essenciais, como alimentos e medicamentos?</label>
+                <select class="form-control" id="q22" required>
+                    <option value="1">O governo deve controlar os preços de todos os produtos essenciais para garantir que sejam acessíveis a todos</option>
+                    <option value="2">O governo deve controlar os preços de alguns produtos essenciais, para proteger os consumidores e garantir acesso</option>
+                    <option value="3">O governo deve ter um controle moderado sobre os preços de produtos essenciais, ajudando a manter preços justos sem exagerar</option>
+                    <option value="4">O governo deve ter pouco controle sobre os preços, permitindo que o mercado defina os valores dos produtos essenciais</option>
+                    <option value="5">O governo não deve intervir no controle de preços; o mercado deve regular livremente os preços dos produtos essenciais</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="q23">23. O que você acha sobre a proteção aos direitos dos trabalhadores, como salários justos e boas condições de trabalho?</label>
+                <select class="form-control" id="q23" required>
+                    <option value="1">O governo deve garantir uma proteção completa aos direitos trabalhistas, com regras rígidas para salários e condições de trabalho</option>
+                    <option value="2">O governo deve oferecer uma proteção significativa aos direitos trabalhistas, assegurando boas condições e salários justos</option>
+                    <option value="3">O governo deve ter uma proteção moderada, garantindo direitos básicos aos trabalhadores, mas com alguma flexibilidade</option>
+                    <option value="4">O governo deve ter uma proteção mínima, com menos regulamentações e permitindo mais liberdade para empregadores e empregados</option>
+                    <option value="5">O governo não deve intervir na proteção dos direitos trabalhistas; o mercado deve regular salários e condições de trabalho</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="q24">24. Qual a sua opinião sobre a participação do governo no planejamento e desenvolvimento das cidades?</label>
+                <select class="form-control" id="q24" required>
+                    <option value="1">O governo deve ter um controle total sobre o planejamento urbano para garantir um desenvolvimento ordenado e acessível a todos</option>
+                    <option value="2">O governo deve ter um papel importante no planejamento urbano, garantindo que o desenvolvimento das cidades seja equilibrado e justo</option>
+                    <option value="3">O governo deve ter um papel moderado, colaborando com o planejamento urbano, mas permitindo também a participação do setor privado</option>
+                    <option value="4">O governo deve ter um papel secundário no planejamento urbano, com a maior parte do desenvolvimento sendo conduzido pelo setor privado</option>
+                    <option value="5">O governo não deve intervir no planejamento urbano; o setor privado deve liderar o desenvolvimento das cidades sem regulamentações</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="q25">25. Qual a sua opinião sobre a regulamentação do setor de tecnologia, como controle de dados e privacidade?</label>
+                <select class="form-control" id="q25" required>
+                    <option value="1">O governo deve regular fortemente as empresas de tecnologia para garantir a proteção de dados e a privacidade dos usuários</option>
+                    <option value="2">O governo deve regular as empresas de tecnologia para proteger os dados e a privacidade, mas com algumas flexibilidade</option>
+                    <option value="3">O governo deve ter uma regulamentação moderada, assegurando proteção de dados e privacidade sem exagerar</option>
+                    <option value="4">O governo deve ter pouca regulamentação, permitindo mais liberdade para as empresas de tecnologia gerenciarem dados e privacidade</option>
+                    <option value="5">O governo não deve regular o setor de tecnologia; as empresas devem ser livres para gerenciar dados e privacidade como acharem melhor</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+        <div id="result" class="mt-4" style="display: none;">
+            <h2>Seu Resultado</h2>
+            <p id="description"></p>
+            <h4>Você é mais parecido com:</h4>
+            <p id="politician"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
